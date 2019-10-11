@@ -5,7 +5,6 @@ div.periodic_table {
 }
 
 div.controls {
-    background-color: white;
     margin-left: 10%;
 }
 
@@ -36,7 +35,6 @@ div.controls p, div.controls select {
 
 div.controls select, div.controls input#search{
     margin: 1px;
-    background-color: white;
     border: solid black 1px;
 }
 div.controls #search {
