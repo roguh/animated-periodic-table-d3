@@ -24,7 +24,9 @@
 
 vis = undefined
 
-d3.select(document).on 'DOMContentLoaded', ->
+window.addEventListener 'DOMReady', ->
+    setTimeout(250)
+
     # Print them
     vis = mk_periodic_table()
     vis.root (d3.select('div.vis')
