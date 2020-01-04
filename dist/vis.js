@@ -27,7 +27,6 @@ var interpolateFloor, mk_periodic_table, niceFormat, perceivable_inverse, vis;
 vis = void 0;
 
 window.addEventListener('DOMReady', function() {
-  setTimeout(250);
   // Print them
   vis = mk_periodic_table();
   vis.root(d3.select('div.vis').append('div').classed('periodic_table', true));
