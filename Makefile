@@ -6,9 +6,8 @@ all: compress
 compress: compile
 	# Minify the resulting javascript
 	cd $(OUT) ; \
-	uglifyjs --screw-ie8 \
-	    --in-source-map $(NAME).js.map \
-	    --source-map \
+	uglifyjs \
+	    --source-map filename=$(NAME).js.map \
 	    -mco $(NAME).min.js -- $(NAME).js
 
 compile:

@@ -24,12 +24,15 @@
 
 vis = undefined
 
-window.addEventListener 'DOMReady', ->
+console.log "Starting animated periodic table."
+
+window.addEventListener 'DOMContentLoaded', ->
     # Print them
     vis = mk_periodic_table()
     vis.root (d3.select('div.vis')
         .append('div').classed('periodic_table', true))
     vis all_chemical_elements
+    console.log "Started animated periodic table."
 
 niceFormat = (n) ->
     if Math.log10(n) > 3
